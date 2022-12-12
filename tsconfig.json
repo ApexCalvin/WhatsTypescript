@@ -1,0 +1,9 @@
+{
+    //defines proj settings, makes sure our ts transpiles into the correct js we want
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true
+    }
+
+}

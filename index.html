@@ -48,14 +48,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!-- unordered list -->
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <!-- ordered list -->
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
+          <!-- a = link -->
           <a class="nav-link" href="https://dictionaryapi.dev">Our API</a>
         </li>
       </ul>
+      <!-- search bar & button -->
+      <!-- id="defineform" is how this html file communicates to index.ts -->
       <form class="d-flex" id="defineform">
         <input class="form-control me-2" type="search" name="defineword" placeholder="What word?" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Define</button>
@@ -66,7 +71,8 @@
 
 <main class="container">
   <div class="bg-light p-5 rounded">
-    <h1>Definition</h1>
+    <h1 id="definition">Definition</h1>
+    
     <p class="lead">Use this part of the page to present your results from the API call.</p>
     <ul class="list-unstyled">
         <li>This is a list. Your word could go here.</li>
@@ -86,9 +92,14 @@
   </div>
 </main>
 
+    <!-- script tag/element -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- added this v -->
+    <!-- googled error to find this code v -->
+    <script>var exports = {};</script>
+    <script src="./index.js" type="module"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-      
   </body>
 </html>
 
